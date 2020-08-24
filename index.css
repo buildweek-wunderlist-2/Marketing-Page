@@ -57,7 +57,7 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -79,23 +79,25 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    border-radius: 10%;
-    padding: .5%;
+    border: 2px solid black;
+    border-radius: 15%;
+    padding: 1%;
+    margin: 0% 1%;
 }
 
 a:visited {
@@ -104,11 +106,20 @@ a:visited {
 
 a:hover {
     color: rgb(0, 0, 165);
+    border: 2px solid rgb(0, 0, 165);
 }
 
 i {
     font-size: 3.5rem;
     color: rgb(0, 0, 165);
+}
+
+a i {
+    color: black;
+}
+
+a i:hover {
+    color: rgb(0, 0, 165)
 }
 
 section{
@@ -123,7 +134,7 @@ header {
 }
 
 nav {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -144,7 +155,13 @@ section.titleSection {
 
 section.titleSection div {
     width: 100%;
+    padding: 2% 0%;
     background: rgb(255,255,255, .7);
+}
+
+.titleSection div a {
+    display: inline-block;
+    margin: 1%;
 }
 
 /*Features Section*/
@@ -156,12 +173,15 @@ section.featuresSection {
 div.featuresContainer {
     display: flex;
     justify-content: space-evenly;
+}
 
+div.featuresDiv {
+    width: 20%;
 }
 
 /*Image Section*/
 div.imageSection {
-    height: 25vh;
+    height: 30vh;
     background-image: url(/Images/concept-1868728_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
