@@ -92,19 +92,27 @@ h3 {
 
 a {
     text-decoration: none;
-    color: rgb(58, 22, 40);
+    color: black;
+    font-weight: 600;
+    border-radius: 10%;
+    padding: .5%;
 }
 
 a:visited {
-    color: rgb(58, 22, 40);
+    color: black;
 }
 
 a:hover {
-    color: rgb(99, 38, 68);
+    color: rgb(0, 0, 165);
 }
 
 i {
     font-size: 3.5rem;
+    color: rgb(0, 0, 165);
+}
+
+section{
+    padding: 4% 0%;
 }
 
 /*Header Styles*/
@@ -122,9 +130,9 @@ nav {
 }
 
 /*Title Section*/
-section.title {
+section.titleSection {
     height: 30vh;
-    background-image: url(/Images/september-3614737_1920.jpg);
+    background-image: url(/Images/apple-1867752_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,9 +142,30 @@ section.title {
     align-items: center;
 }
 
-section.title div {
+section.titleSection div {
     width: 100%;
-    background: rgb(255,255,255, .3);
+    background: rgb(255,255,255, .7);
+}
+
+/*Features Section*/
+section.featuresSection {
+    display: flex;
+    flex-direction: column;
+}
+
+div.featuresContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*Image Section*/
+div.imageSection {
+    height: 25vh;
+    background-image: url(/Images/concept-1868728_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
