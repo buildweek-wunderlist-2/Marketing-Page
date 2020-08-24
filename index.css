@@ -1,3 +1,6 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+
 /*CSS Reset
 http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,6 +57,7 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
+    border: 1px solid black;
 }
 
 html {
@@ -61,11 +65,17 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    background-color: #fffafa;
     color: black;
     font-family: sans-serif;
-    background-color: white;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
 }
 
 h1 {
@@ -79,4 +89,56 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+
+a {
+    text-decoration: none;
+    color: rgb(58, 22, 40);
+}
+
+a:visited {
+    color: rgb(58, 22, 40);
+}
+
+a:hover {
+    color: rgb(99, 38, 68);
+}
+
+i {
+    font-size: 3.5rem;
+}
+
+/*Header Styles*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Title Section*/
+section.title {
+    height: 30vh;
+    background-image: url(/Images/september-3614737_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.title div {
+    width: 100%;
+    background: rgb(255,255,255, .3);
+}
+
+
+
 
