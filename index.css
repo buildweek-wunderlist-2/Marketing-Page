@@ -206,25 +206,80 @@ section.imageGallery {
     background-image: url(/Images/balance-865089_1920.jpg);
 }
 
-div.schedule {
+.schedule {
     background-image: url(/Images/day-planner-828611_1920.jpg);
 }
 
-div.collaborate {
+.collaborate {
     background-image: url(/Images/office-1209640_1920.jpg);
 }
 
-div.share {
+.share {
     background-image: url(/Images/share-1411235_1920.jpg);
 }
 
-.imageGallery div .hidden {
+.imageGallery div .imgTitle {
     width: 100%;
     background: rgb(255,255,255, .7);
 }
 
-.imageGallery div .hidden:hover {
+.imageGallery div .imgTitle:hover {
     color: dodgerblue;
+}
+
+/*Profile Gallery*/
+div.aboutGallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.aboutGallery .imgContainer {
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2.5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutGallery div .imgTitle {
+    width: 100%;
+    background: rgb(255,255,255, .7);
+}
+
+.aboutGallery div .imgTitle:hover {
+    color: dodgerblue;
+}
+
+.hoesle {
+    background-image: url(/Images/hoesle.jpeg);
+}
+
+.lee { 
+    background-image: url(/Images/lee.jpeg);
+}
+
+.stewart {
+    background-image: url(/Images/stewart.jpeg);
+}
+
+.vega {
+    background-image: url(/Images/vega.jpeg);
+}
+
+.watts {
+    background-image: url(/Images/watts.jpeg);
+}
+
+.whitwell {
+    background-image: url(/Images/whitwell.png);
+}
+
+.woo {
+    background-image: url(/Images/woo.jpeg);
 }
 
 /*Footer*/
