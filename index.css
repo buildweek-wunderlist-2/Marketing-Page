@@ -171,7 +171,7 @@ div.featuresDiv {
 
 /*Home Page Image Section*/
 div.imageSection {
-    height: 30vh;
+    height: 300px;
     background-image: url(/Images/concept-1868728_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -253,24 +253,53 @@ div.aboutGallery {
     justify-content: space-evenly;
 }
 
+.profileContainer {
+    width: 35%;
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgTitle i {
+    color: black;
+}
+
 .aboutGallery .imgContainer {
-    width: 30%;
-    height: 300px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 2.5%;
+    margin: 0;
     display: flex;
     align-items: flex-end;
 }
 
 .aboutGallery div .imgTitle {
     width: 100%;
-    background: rgb(255,255,255, .7);
+    padding: 1% 0;
+    background: dodgerblue;
 }
 
-.aboutGallery div .imgTitle:hover {
-    color: dodgerblue;
+.aboutGallery div .imgTitle a:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.aboutGallery div .imgTitle a:hover > i {
+    color: white;
+}
+
+.githubAnchor {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubAnchor i {
+    padding-left: 1%;
 }
 
 .hoesle {
@@ -366,11 +395,6 @@ address a:hover {
         flex-direction: column;
     }
 
-/*Home Page Title Section*/
-/* section.titleSection {
-    height: 200px;
-    } */
-
 /*Home Page Features Section*/
     div.featuresContainer {
         flex-direction: column;
@@ -387,6 +411,10 @@ address a:hover {
         flex-direction: column;
         align-items: center;
     }
+
+    .profileContainer {
+        width: 60%;
+    }
     
     .imgContainer {
         width: 60%;
@@ -401,9 +429,7 @@ address a:hover {
     }
 
     .aboutGallery .imgContainer {
-    width: 60%;
-    height: 30vh;
-    margin: 5% 0;
+    width: 100%;
     }
 }
 
