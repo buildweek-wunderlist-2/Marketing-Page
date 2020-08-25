@@ -70,7 +70,6 @@ body {
     line-height: 1.5;
     background-color: #fffafa;
     color: black;
-    font-family: sans-serif;
     text-align: center;
 }
 
@@ -94,8 +93,6 @@ a {
     text-decoration: none;
     letter-spacing: 1.5px;
     color: black;
-    border-radius: 5%;
-    font-weight: 600;
     padding: 1%;
     margin: 0% 2%;
 }
@@ -119,7 +116,7 @@ section{
     padding: 4% 0%;
 }
 
-/*Header Styles*/
+/*Home Page Header Styles*/
 header {
     display: flex;
     justify-content: space-between;
@@ -133,7 +130,7 @@ nav {
     align-items: center;
 }
 
-/*Title Section*/
+/*Home Page Title Section*/
 section.titleSection {
     height: 30vh;
     background-image: url(/Images/apple-1867752_1920.jpg);
@@ -157,7 +154,7 @@ section.titleSection div {
     margin: 1%;
 }
 
-/*Features Section*/
+/*Home Page Features Section*/
 section.featuresSection {
     display: flex;
     flex-direction: column;
@@ -172,7 +169,7 @@ div.featuresDiv {
     width: 20%;
 }
 
-/*Image Section*/
+/*Home Page Image Section*/
 div.imageSection {
     height: 30vh;
     background-image: url(/Images/concept-1868728_1920.jpg);
@@ -181,13 +178,13 @@ div.imageSection {
     background-position: center;
 }
 
-/*About Section*/
+/*Home Page About Section*/
 section.aboutSection {
     margin: 0% 5%;
 }
 
-/*Image Gallery*/
-section.imageGallery {
+/*Home Page Learn More Section*/
+.imageGallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -227,7 +224,25 @@ section.imageGallery {
     color: dodgerblue;
 }
 
-/*Profile Gallery*/
+/*About Page Header*/
+.aboutHeader {
+    background-color: dodgerblue;
+}
+
+.aboutHeader i {
+    color: black;
+}
+
+.aboutHeader a:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.aboutHeader a:hover > i {
+    color: white;
+}
+
+/*About Page Profile Gallery*/
 div.aboutGallery {
     display: flex;
     flex-flow: row wrap;
