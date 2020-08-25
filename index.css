@@ -1,5 +1,5 @@
 /*Font Import*/
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Open+Sans&family=Roboto&display=swap');
 
 /*CSS Reset
 http://meyerweb.com/eric/tools/css/reset/ 
@@ -22,7 +22,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/*border: 0*/
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -66,7 +66,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     background-color: #fffafa;
     color: black;
@@ -75,7 +75,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Architects Daughter', cursive;
 }
 
 h1 {
@@ -92,12 +92,12 @@ h3 {
 
 a {
     text-decoration: none;
+    letter-spacing: 1.5px;
     color: black;
+    border-radius: 5%;
     font-weight: 600;
-    border: 2px solid black;
-    border-radius: 15%;
     padding: 1%;
-    margin: 0% 1%;
+    margin: 0% 2%;
 }
 
 a:visited {
@@ -105,21 +105,14 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(0, 0, 165);
-    border: 2px solid rgb(0, 0, 165);
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 5%;
 }
 
 i {
     font-size: 3.5rem;
-    color: rgb(0, 0, 165);
-}
-
-a i {
-    color: black;
-}
-
-a i:hover {
-    color: rgb(0, 0, 165)
+    color: dodgerblue;
 }
 
 section{
@@ -134,9 +127,9 @@ header {
 }
 
 nav {
-    width: 60%;
+    width: 75%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -186,6 +179,104 @@ div.imageSection {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/*About Section*/
+section.aboutSection {
+    margin: 0% 5%;
+}
+
+/*Image Gallery*/
+section.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgContainer {
+    width: 40%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2.5%;
+}
+
+.create {
+    background-image: url(/Images/balance-865089_1920.jpg);
+}
+
+div.schedule {
+    background-image: url(/Images/day-planner-828611_1920.jpg);
+}
+
+div.collaborate {
+    background-image: url(/Images/office-1209640_1920.jpg);
+}
+
+div.share {
+    background-image: url(/Images/share-1411235_1920.jpg);
+}
+
+.imageGallery div .hidden {
+    width: 100%;
+    background: rgb(255,255,255, .7);
+}
+
+.imageGallery div .hidden:hover {
+    color: dodgerblue;
+}
+
+/*Footer*/
+footer {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+}
+
+footer nav, footer div, footer address {
+    margin-top: 1%;
+}
+
+footer nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia a:hover {
+    border: none;
+}
+
+footer i {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+address {
+    width: 100%;
+}
+
+address a {
+    border: none;
+    padding: 0;
+    font-weight: normal;
+}
+
+address a:hover {
+    border: none;
+    color: white;
 }
 
 
