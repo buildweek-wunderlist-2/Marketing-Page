@@ -1,3 +1,6 @@
+/*Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Open+Sans&family=Roboto&display=swap');
+
 /*CSS Reset
 http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -19,7 +22,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/*border: 0*/
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,6 +50,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*End of CSS Reset*/
 
 /*General Styles*/
 * {
@@ -54,6 +58,7 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -61,22 +66,376 @@ html {
 }
 
 body {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    background-color: #fffafa;
     color: black;
-    font-family: sans-serif;
-    background-color: white;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Architects Daughter', cursive;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
+
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: black;
+    padding: 1%;
+    margin: 0% 2%;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+}
+
+i {
+    font-size: 3.5rem;
+    color: dodgerblue;
+}
+
+section{
+    padding: 4% 0;
+}
+
+/*Home Page Header Styles*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*Home Page Title Section*/
+.titleSection {
+    height: 400px;
+    background-image: url(/Images/apple-1867752_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.titleSection div {
+    width: 100%;
+    padding: 2% 0%;
+    background: rgb(255,255,255, .7);
+}
+
+.titleSection div a {
+    display: inline-block;
+    margin: 1%;
+}
+
+/*Home Page Features Section*/
+.featuresContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.featuresDiv {
+    width: 20%;
+}
+
+/*Home Page Image Section*/
+.imageSection {
+    height: 300px;
+    background-image: url(/Images/concept-1868728_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Home Page About Section*/
+.aboutSection {
+    margin: 0% 5%;
+}
+
+/*Home Page Learn More Section*/
+.learnMore {
+    padding-top: 0;
+}
+
+.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgContainer {
+    width: 45%;
+    height: 45vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2.5%;
+}
+
+.create {
+    background-image: url(/Images/balance-865089_1920.jpg);
+}
+
+.schedule {
+    background-image: url(/Images/day-planner-828611_1920.jpg);
+}
+
+.collaborate {
+    background-image: url(/Images/office-1209640_1920.jpg);
+}
+
+.share {
+    background-image: url(/Images/share-1411235_1920.jpg);
+}
+
+.imageGallery div .imgTitle {
+    width: 100%;
+    background: rgb(255,255,255, .7);
+}
+
+.imageGallery div .imgTitle:hover {
+    color: dodgerblue;
+}
+
+/*About Page Header*/
+.aboutHeader {
+    background-color: dodgerblue;
+}
+
+.aboutHeader i {
+    color: black;
+}
+
+.aboutHeader a:hover {
+    color: white;
+    border: 2px solid white;
+}
+
+.aboutHeader a:hover > i {
+    color: white;
+}
+
+/*About Page Profile Gallery*/
+.aboutGallery {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.profileContainer {
+    width: 35%;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.aboutGallery .imgContainer {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+.aboutGallery div .imgTitle {
+    width: 100%;
+    padding: 1% 0;
+}
+
+.imgTitle i {
+    color: black;
+}
+
+.aboutGallery div .imgTitle a:hover {
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.aboutGallery div .imgTitle a:hover > i {
+    color: dodgerblue;
+}
+
+.githubAnchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.githubAnchor i {
+    padding-left: 1%;
+}
+
+/*About Page Profile Gallery Pictures*/
+.hoesle {
+    background-image: url(/Images/hoesle.jpeg);
+}
+
+.lee { 
+    background-image: url(/Images/lee.jpeg);
+}
+
+.stewart {
+    background-image: url(/Images/stewart.jpeg);
+}
+
+.vega {
+    background-image: url(/Images/vega.jpeg);
+}
+
+.watts {
+    background-image: url(/Images/watts.jpeg);
+}
+
+.whitwell {
+    background-image: url(/Images/whitwell.png);
+}
+
+.woo {
+    background-image: url(/Images/woo.jpeg);
+}
+
+/*Footer*/
+footer {
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+}
+
+footer nav, footer div, footer address {
+    margin-top: 1%;
+    width: 100%;
+}
+
+footer nav {
+    justify-content: space-evenly;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+footer i {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer nav a:hover {
+    border: 2px solid white;
+}
+
+.socialMedia a:hover, address a:hover {
+    border: none;
+}
+
+/*Media Queries*/
+@media (max-width: 800px) {
+/*Home Page Features Section*/
+    .featuresContainer {
+        flex-wrap: wrap;
+    }
+
+    .featuresDiv {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+/*Home Page Learn More Section*/
+    .imgContainer {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 500px) {
+/*Home Page Header*/
+    header{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+/*Home Page Features Section*/
+    .featuresContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featuresDiv {
+        width: 50%;
+        margin: 2.5% 0;
+    }
+
+/*Home Page Learn More Section*/
+    .imageGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgContainer {
+        width: 60%;
+        height: 30vh;
+        margin: 5% 0;
+    }
+
+/*About Page Profile Gallery*/
+    .aboutGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profileContainer {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
 
