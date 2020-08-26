@@ -50,6 +50,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*End of CSS Reset*/
 
 /*General Styles*/
 * {
@@ -104,7 +105,7 @@ a:visited {
 a:hover {
     color: dodgerblue;
     border: 2px solid dodgerblue;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 i {
@@ -131,19 +132,17 @@ nav {
 }
 
 /*Home Page Title Section*/
-section.titleSection {
+.titleSection {
     height: 400px;
     background-image: url(/Images/apple-1867752_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-section.titleSection div {
+.titleSection div {
     width: 100%;
     padding: 2% 0%;
     background: rgb(255,255,255, .7);
@@ -155,22 +154,17 @@ section.titleSection div {
 }
 
 /*Home Page Features Section*/
-section.featuresSection {
-    display: flex;
-    flex-direction: column;
-}
-
-div.featuresContainer {
+.featuresContainer {
     display: flex;
     justify-content: space-evenly;
 }
 
-div.featuresDiv {
+.featuresDiv {
     width: 20%;
 }
 
 /*Home Page Image Section*/
-div.imageSection {
+.imageSection {
     height: 300px;
     background-image: url(/Images/concept-1868728_1920.jpg);
     background-size: cover;
@@ -179,7 +173,7 @@ div.imageSection {
 }
 
 /*Home Page About Section*/
-section.aboutSection {
+.aboutSection {
     margin: 0% 5%;
 }
 
@@ -195,8 +189,8 @@ section.aboutSection {
 }
 
 .imgContainer {
-    width: 40%;
-    height: 40vh;
+    width: 45%;
+    height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -247,23 +241,24 @@ section.aboutSection {
 }
 
 /*About Page Profile Gallery*/
-div.aboutGallery {
+.aboutGallery {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .profileContainer {
     width: 35%;
-    margin: 2.5% 0;
+    margin: 2.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.imgTitle i {
-    color: black;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
 }
 
 .aboutGallery .imgContainer {
@@ -274,25 +269,28 @@ div.aboutGallery {
     margin: 0;
     display: flex;
     align-items: flex-end;
+    border-radius: 10px 10px 0 0;
 }
 
 .aboutGallery div .imgTitle {
     width: 100%;
     padding: 1% 0;
-    background: dodgerblue;
+}
+
+.imgTitle i {
+    color: black;
 }
 
 .aboutGallery div .imgTitle a:hover {
-    color: white;
-    border: 2px solid white;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
 }
 
 .aboutGallery div .imgTitle a:hover > i {
-    color: white;
+    color: dodgerblue;
 }
 
 .githubAnchor {
-    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,6 +300,7 @@ div.aboutGallery {
     padding-left: 1%;
 }
 
+/*About Page Profile Gallery Pictures*/
 .hoesle {
     background-image: url(/Images/hoesle.jpeg);
 }
@@ -341,21 +340,16 @@ footer {
 
 footer nav, footer div, footer address {
     margin-top: 1%;
+    width: 100%;
 }
 
 footer nav {
-    width: 100%;
     justify-content: space-evenly;
 }
 
 .socialMedia {
-    width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.socialMedia a:hover {
-    border: none;
 }
 
 footer i {
@@ -364,25 +358,34 @@ footer i {
 
 footer a:hover {
     color: white;
+}
+
+footer nav a:hover {
     border: 2px solid white;
 }
 
-address {
-    width: 100%;
-}
-
-address a {
+.socialMedia a:hover, address a:hover {
     border: none;
-    padding: 0;
-    font-weight: normal;
-}
-
-address a:hover {
-    border: none;
-    color: white;
 }
 
 /*Media Queries*/
+@media (max-width: 800px) {
+/*Home Page Features Section*/
+    .featuresContainer {
+        flex-wrap: wrap;
+    }
+
+    .featuresDiv {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+/*Home Page Learn More Section*/
+    .imgContainer {
+        height: 40vh;
+    }
+}
+
 @media (max-width: 500px) {
 /*Home Page Header*/
     header{
@@ -396,12 +399,12 @@ address a:hover {
     }
 
 /*Home Page Features Section*/
-    div.featuresContainer {
+    .featuresContainer {
         flex-direction: column;
         align-items: center;
     }
     
-    div.featuresDiv {
+    .featuresDiv {
         width: 50%;
         margin: 2.5% 0;
     }
@@ -411,10 +414,6 @@ address a:hover {
         flex-direction: column;
         align-items: center;
     }
-
-    .profileContainer {
-        width: 60%;
-    }
     
     .imgContainer {
         width: 60%;
@@ -423,32 +422,17 @@ address a:hover {
     }
 
 /*About Page Profile Gallery*/
-    div.aboutGallery {
-    flex-direction: column;
-    align-items: center;
+    .aboutGallery {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .aboutGallery .imgContainer {
-    width: 100%;
+    .profileContainer {
+        width: 60%;
     }
 }
 
-@media (max-width: 800px) {
-/*Home Page Features Section*/
-    div.featuresContainer {
-    flex-wrap: wrap;
-    }
 
-    div.featuresDiv {
-    width: 45%;
-    margin: 2.5%;
-    }
-
-/*Home Page Learn More Section*/
-    .imgContainer {
-    height: 40vh;
-    }
-}
 
 
 
